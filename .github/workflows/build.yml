@@ -2,8 +2,8 @@ name: Desktop - Build
 
 on:
   workflow_dispatch:
-    push:
-      branches:
+  push:
+    branches:
       - master
 
 env:
