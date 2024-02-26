@@ -407,8 +407,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0864054bc68c7274a96038ad0c00702c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _iosGameID: 
-  _androidGameID: 
+  _iosGameID: 5552927
+  _androidGameID: 5552926
   testMode: 1
 --- !u!4 &348595227
 Transform:

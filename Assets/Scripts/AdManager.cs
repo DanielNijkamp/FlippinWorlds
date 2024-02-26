@@ -25,6 +25,7 @@ public class AdManager : MonoBehaviour , IUnityAdsInitializationListener
     private InterstitialAdHandler _interstitialAdHandler;
 
     private string platform;
+    private string platformID;
 
     void Awake()
     {
@@ -46,9 +47,10 @@ public class AdManager : MonoBehaviour , IUnityAdsInitializationListener
     public void InitializeAds()
     {
         platform = (Application.platform == RuntimePlatform.IPhonePlayer) ? "iPhone" : "Android";
+        platformID = (Application.platform == RuntimePlatform.IPhonePlayer) ? _iosGameID : _androidGameID;
         if (!Advertisement.isInitialized && Advertisement.isSupported)
         {
-            Advertisement.Initialize(platform, testMode, this);
+            Advertisement.Initialize(platformID , testMode, this);
         }
     }
 
