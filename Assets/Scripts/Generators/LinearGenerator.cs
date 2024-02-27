@@ -1,15 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
+using Randomization;
 using UnityEngine;
 using UnityEngine.Serialization;
 
-public class LinearGenerator : MonoBehaviour, IGenerator
+public sealed class LinearGenerator : MonoBehaviour, IGenerator
 {
-    [SerializeField] private GameObject obstaclePrefab;
-    [SerializeField] private int numObstacles;
-    [SerializeField] private float spacing;
-    [SerializeField] private float lineRotationAngle;
-    [SerializeField] private float obstacleRotationAngle;
+    [SerializeField] private GameObject _obstaclePrefab;
+    [SerializeField] private VariableInt _numObstacles;
+    [SerializeField] private VariableFloat _spacing;
+    [SerializeField] private VariableFloat _lineRotationAngle;
+    [SerializeField] private VariableFloat _obstacleRotationAngle;
     
     void Start()
     {
@@ -18,47 +19,63 @@ public class LinearGenerator : MonoBehaviour, IGenerator
 
     private void OnDrawGizmosSelected()
     {
-        Gizmos.color = Color.blue;
-        Quaternion lineRotation = Quaternion.Euler(0f, lineRotationAngle, 0f);
+        Quaternion lineRotation = Quaternion.Euler(0f, _lineRotationAngle.Value, 0f);
         Vector3 startPosition = transform.position;
-        Vector3 endPosition = transform.position + lineRotation * Vector3.right * (numObstacles - 1) * spacing;
+
+        var obstacleCount = _numObstacles.VariableType == VariableType.Fixed
+            ? _numObstacles.Value
+            : _numObstacles.MaxValue;
+
+        var lineSpacing = _spacing.VariableType == VariableType.Fixed 
+            ? _spacing.Value 
+            : _spacing.MaxValue;
+        
+        Vector3 endPosition = transform.position + lineRotation * Vector3.right * (obstacleCount) * (lineSpacing);
+        
+        Gizmos.color = Color.blue;
         Gizmos.DrawLine(startPosition, endPosition);
-    
-        for (int i = 0; i < numObstacles; i++)
+        
+        if (_numObstacles.VariableType == VariableType.Fixed)
         {
-            Gizmos.color = Color.cyan;
-            Vector3 position = transform.position + lineRotation * Vector3.right * i * spacing;
-            Quaternion obstacleRotation = Quaternion.Euler(0f, obstacleRotationAngle, 0f);
-        
-            Matrix4x4 oldGizmosMatrix = Gizmos.matrix;  // Store the old matrix
+            var length = _numObstacles.Value;
+            for (int i = 0; i < length; i++)
+            {
+                Gizmos.color = Color.cyan;
+                
+                Vector3 position = transform.position + lineRotation * Vector3.right * i * lineSpacing;
+                Quaternion obstacleRotation = Quaternion.Euler(0f, _obstacleRotationAngle.Value, 0f);
 
-            Gizmos.matrix = Matrix4x4.TRS(position, obstacleRotation, Vector3.one);
-            Gizmos.DrawWireCube(Vector3.zero, Vector3.one);
-        
-            Gizmos.matrix = oldGizmosMatrix;  // Reset the matrix for DrawLine
+                Matrix4x4 oldGizmosMatrix = Gizmos.matrix;
 
-            Gizmos.color = Color.green;
-            Vector3 forwardPosition = position + (obstacleRotation * Vector3.right * 0.5f);
-            Gizmos.DrawLine(position, forwardPosition);
+                Gizmos.matrix = Matrix4x4.TRS(position, obstacleRotation, Vector3.one);
+                Gizmos.DrawWireCube(Vector3.zero, Vector3.one);
+            
+                Gizmos.matrix = oldGizmosMatrix;
+
+                Gizmos.color = Color.green;
+                Vector3 forwardPosition = position + (obstacleRotation * Vector3.right * 0.5f);
+                Gizmos.DrawLine(position, forwardPosition);
+            }
+            
         }
     }
-
+    
     public void Generate()
     {
-        Quaternion lineRotation = Quaternion.Euler(0f, lineRotationAngle, 0f);
+        Quaternion lineRotation = Quaternion.Euler(0f, _lineRotationAngle.Value, 0f);
 
-        // Generate obstacles in the line
-        for (int i = 0; i < numObstacles; i++)
+        var length = _numObstacles.Value;
+        for (int i = 0; i < length; i++)
         {
-            Vector3 obstaclePosition = transform.position + lineRotation * Vector3.right * i * spacing;
-            Quaternion obstacleRotation = Quaternion.Euler(0f, obstacleRotationAngle, 0f);
+            Vector3 obstaclePosition = transform.position + lineRotation * Vector3.right * i * _spacing.Value;
+            Quaternion obstacleRotation = Quaternion.Euler(0f, _obstacleRotationAngle.Value, 0f);
             SpawnObstacle(obstaclePosition, obstacleRotation);
         }
     }
 
     private void SpawnObstacle(Vector3 position, Quaternion rotation)
     {
-        GameObject obstacle = Instantiate(obstaclePrefab, position, rotation);
+        GameObject obstacle = Instantiate(_obstaclePrefab, position, rotation);
         obstacle.transform.parent = transform;
     }
 }

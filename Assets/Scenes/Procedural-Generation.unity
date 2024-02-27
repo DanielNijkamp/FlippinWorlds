@@ -152,12 +152,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6f3a6b0001aff84e97571374f737189, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstaclePrefab: {fileID: 6132987470513716054, guid: 34a933d5204e8d9469bdf5f5435ae1d2,
+  _obstaclePrefab: {fileID: 6132987470513716054, guid: 34a933d5204e8d9469bdf5f5435ae1d2,
     type: 3}
-  numObstacles: 5
-  offset: 1
-  rotateObstacles: 0
-  rotateSpeed: 0
+  _numObstacles:
+    VariableType: 1
+    FixedValue: 0
+    MinValue: 2
+    MaxValue: 9
+  _offset:
+    VariableType: 0
+    FixedValue: 3
+    MinValue: 0
+    MaxValue: 0
+  _rotateObstacles: 1
+  _rotateSpeed:
+    VariableType: 1
+    FixedValue: 0
+    MinValue: 1
+    MaxValue: 50
 --- !u!4 &398750332
 Transform:
   m_ObjectHideFlags: 0
@@ -354,12 +366,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6f3a6b0001aff84e97571374f737189, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstaclePrefab: {fileID: 6132987470513716054, guid: 34a933d5204e8d9469bdf5f5435ae1d2,
+  _obstaclePrefab: {fileID: 6132987470513716054, guid: 34a933d5204e8d9469bdf5f5435ae1d2,
     type: 3}
-  numObstacles: 3
-  offset: 1
-  rotateObstacles: 0
-  rotateSpeed: 0
+  _numObstacles:
+    VariableType: 0
+    FixedValue: 5
+    MinValue: 2
+    MaxValue: 5
+  _offset:
+    VariableType: 0
+    FixedValue: 2
+    MinValue: 0
+    MaxValue: 0
+  _rotateObstacles: 0
+  _rotateSpeed:
+    VariableType: 0
+    FixedValue: 0
+    MinValue: 0
+    MaxValue: 0
 --- !u!1 &1539659198
 GameObject:
   m_ObjectHideFlags: 0
@@ -425,12 +449,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6f3a6b0001aff84e97571374f737189, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstaclePrefab: {fileID: 6132987470513716054, guid: 34a933d5204e8d9469bdf5f5435ae1d2,
+  _obstaclePrefab: {fileID: 6132987470513716054, guid: 34a933d5204e8d9469bdf5f5435ae1d2,
     type: 3}
-  numObstacles: 9
-  offset: 3
-  rotateObstacles: 1
-  rotateSpeed: 50
+  _numObstacles:
+    VariableType: 0
+    FixedValue: 5
+    MinValue: 5
+    MaxValue: 85
+  _offset:
+    VariableType: 1
+    FixedValue: 3
+    MinValue: 3
+    MaxValue: 2
+  _rotateObstacles: 0
+  _rotateSpeed:
+    VariableType: 0
+    FixedValue: 0
+    MinValue: 0
+    MaxValue: 0
 --- !u!4 &1804834290
 Transform:
   m_ObjectHideFlags: 0
@@ -593,12 +629,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2e870e4b378b224f94e27dc131577c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstaclePrefab: {fileID: 5808329271765731573, guid: a5701050996e96a4780603fe34755ecf,
+  _obstaclePrefab: {fileID: 5808329271765731573, guid: a5701050996e96a4780603fe34755ecf,
     type: 3}
-  numObstacles: 5
-  spacing: 3
-  lineRotationAngle: 45
-  obstacleRotationAngle: -45
+  _numObstacles:
+    VariableType: 0
+    FixedValue: 5
+    MinValue: 3
+    MaxValue: 5
+  _spacing:
+    VariableType: 0
+    FixedValue: 3
+    MinValue: 3
+    MaxValue: 5
+  _lineRotationAngle:
+    VariableType: 0
+    FixedValue: 45
+    MinValue: 0
+    MaxValue: 0
+  _obstacleRotationAngle:
+    VariableType: 0
+    FixedValue: 0
+    MinValue: 0
+    MaxValue: 0
 --- !u!4 &2093299200
 Transform:
   m_ObjectHideFlags: 0
@@ -658,12 +710,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2e870e4b378b224f94e27dc131577c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstaclePrefab: {fileID: 5808329271765731573, guid: a5701050996e96a4780603fe34755ecf,
+  _obstaclePrefab: {fileID: 6132987470513716054, guid: 34a933d5204e8d9469bdf5f5435ae1d2,
     type: 3}
-  numObstacles: 5
-  spacing: 3
-  lineRotationAngle: 0
-  obstacleRotationAngle: -45
+  _numObstacles:
+    VariableType: 1
+    FixedValue: 4
+    MinValue: 3
+    MaxValue: 6
+  _spacing:
+    VariableType: 0
+    FixedValue: 3
+    MinValue: 0
+    MaxValue: 0
+  _lineRotationAngle:
+    VariableType: 0
+    FixedValue: -45
+    MinValue: 0
+    MaxValue: 0
+  _obstacleRotationAngle:
+    VariableType: 0
+    FixedValue: 0
+    MinValue: 0
+    MaxValue: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
