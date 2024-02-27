@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 398750332}
   - component: {fileID: 398750331}
   m_Layer: 0
-  m_Name: ObstacleGenerator
+  m_Name: RadialGenerator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -333,7 +333,7 @@ GameObject:
   - component: {fileID: 1386327519}
   - component: {fileID: 1386327520}
   m_Layer: 0
-  m_Name: ObstacleGenerator (2)
+  m_Name: RadialGenerator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -431,7 +431,7 @@ GameObject:
   - component: {fileID: 1804834290}
   - component: {fileID: 1804834289}
   m_Layer: 0
-  m_Name: ObstacleGenerator (1)
+  m_Name: RadialGenerator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -677,7 +677,7 @@ GameObject:
   - component: {fileID: 2127589149}
   - component: {fileID: 2127589150}
   m_Layer: 0
-  m_Name: LinearGenerator (1)
+  m_Name: LinearGenerator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

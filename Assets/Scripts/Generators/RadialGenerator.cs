@@ -2,7 +2,7 @@ using Randomization;
 using UnityEngine;
 using UnityEngine.Serialization;
 
-public sealed class  ObstacleGenerator : MonoBehaviour, IGenerator
+public sealed class  RadialGenerator : MonoBehaviour, IGenerator
 {
     [SerializeField] private GameObject _obstaclePrefab;
     [SerializeField] private VariableInt _numObstacles;
