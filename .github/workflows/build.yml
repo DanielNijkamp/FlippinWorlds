@@ -1,4 +1,4 @@
-name: Desktop - Build
+name: Build
 
 on:
   workflow_dispatch:
@@ -13,17 +13,17 @@ permissions:
   contents: write
 
 jobs:
-  build-for-desktop:
+  build:
     name: Build for ${{ matrix.targetPlatform }}
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
         targetPlatform:
-          - StandaloneWindows64
-          - StandaloneOSX
+          # - StandaloneWindows64
+          # - StandaloneOSX
           - Android
-          - iOS
+          #- iOS
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -52,7 +52,7 @@ jobs:
           path: ${{ env.PROJECT_NAME }}.${{ matrix.targetPlatform }}.zip
   create-release:
     name: Upload and create new release
-    needs: build-for-desktop
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Create environment variables
