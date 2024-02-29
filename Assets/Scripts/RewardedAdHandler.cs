@@ -16,7 +16,7 @@ public class RewardedAdHandler : MonoBehaviour, IUnityAdsLoadListener, IUnityAds
     [SerializeField] string _iOSAdUnitId = "Rewarded_iOS";
 
     [Header("Implementation")]
-    [SerializeField] private UnityEvent OnReward = new UnityEvent();
+    [SerializeField] private UnityEvent _onReward = new UnityEvent();
     private bool _debugMode;
     private string _adUnitId = null;
 
@@ -54,7 +54,7 @@ public class RewardedAdHandler : MonoBehaviour, IUnityAdsLoadListener, IUnityAds
             if (_debugMode)
                 Debug.Log("Player rewarded");
             //reward de player and load another ad
-            OnReward.Invoke();
+            _onReward.Invoke();
             LoadAd();
         }
     }
