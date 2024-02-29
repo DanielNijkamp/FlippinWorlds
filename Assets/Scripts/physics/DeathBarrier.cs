@@ -4,14 +4,12 @@ using UnityEngine;
 
 public class DeathBarrier : MonoBehaviour
 {
-    [SerializeField] private Transform respawnPosition;
+    [SerializeField] private Transform _respawnPosition;
     private void OnCollisionEnter(Collision collision)
     {
-        {
             if (collision.gameObject.CompareTag("Ball"))
             {
-                collision.gameObject.transform.position = respawnPosition.position;
+                collision.gameObject.transform.position = _respawnPosition.position;
             }
-        }
     }
 }

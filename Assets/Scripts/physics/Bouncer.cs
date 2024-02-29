@@ -7,6 +7,6 @@ public class Bouncer : MonoBehaviour
     [SerializeField] private float _explosionStrength;
     void OnCollisionEnter(Collision _other)
     {
-        _other.rigidbody.AddExplosionForce(_explosionStrength, transform.position, 2f);
+        _other.rigidbody.AddExplosionForce(_explosionStrength, transform.position, 25f);
     }
 }
