@@ -18,14 +18,14 @@ public class AdManager : MonoBehaviour , IUnityAdsInitializationListener
     [SerializeField] private string _androidGameID = "";
 
     [Header("Debugging")]
-    [SerializeField] private bool testMode = false;
+    [SerializeField] private bool _testMode = false;
     
     public static AdManager Instance;
     private RewardedAdHandler _rewardedAdHandler;
     private InterstitialAdHandler _interstitialAdHandler;
 
-    private string platform;
-    private string platformID;
+    private string _platform;
+    private string _platformID;
 
     void Awake()
     {
@@ -46,26 +46,26 @@ public class AdManager : MonoBehaviour , IUnityAdsInitializationListener
     #region Initialize Ads
     public void InitializeAds()
     {
-        platform = (Application.platform == RuntimePlatform.IPhonePlayer) ? "iPhone" : "Android";
-        platformID = (Application.platform == RuntimePlatform.IPhonePlayer) ? _iosGameID : _androidGameID;
+        _platform = (Application.platform == RuntimePlatform.IPhonePlayer) ? "iPhone" : "Android";
+        _platformID = (Application.platform == RuntimePlatform.IPhonePlayer) ? _iosGameID : _androidGameID;
         if (!Advertisement.isInitialized && Advertisement.isSupported)
         {
-            Advertisement.Initialize(platformID , testMode, this);
+            Advertisement.Initialize(_platformID , _testMode, this);
         }
     }
 
 
     public void OnInitializationComplete()
     {
-        if (testMode)
+        if (_testMode)
             Debug.Log("Unity Ads initialization complete.");
-        _rewardedAdHandler.SetupAd(platform , testMode);
-        _interstitialAdHandler.SetupAd(platform , testMode);
+        _rewardedAdHandler.SetupAd(_platform , _testMode);
+        _interstitialAdHandler.SetupAd(_platform , _testMode);
     }
 
     public void OnInitializationFailed(UnityAdsInitializationError error, string message)
     {
-        if (testMode)
+        if (_testMode)
             Debug.Log($"Unity Ads Initialization Failed: {error.ToString()} - {message}");
     }
     #endregion
