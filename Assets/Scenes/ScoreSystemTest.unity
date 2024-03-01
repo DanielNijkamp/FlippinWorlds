@@ -805,7 +805,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Credits: '
+  m_text: 'Credit: '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 744420bb53ffc7c47a93c3573593df09, type: 2}
   m_sharedMaterial: {fileID: -8043231639720955158, guid: 744420bb53ffc7c47a93c3573593df09,

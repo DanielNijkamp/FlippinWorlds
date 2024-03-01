@@ -56,7 +56,7 @@ public class SessionScoreHandler : MonoBehaviour , ScoreSystem
     #region debugTests
     public void UpdateUI()
     {
-        _scoreText.text = _score.ToString();
+        _scoreText.text = "Current Score: " + _score.ToString();
     }
     public void DebugButton(string value)
     {

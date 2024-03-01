@@ -25,14 +25,14 @@ public class HighScoreHandler : MonoBehaviour , ScoreSystem
 
     public int CreditsConversion(int score)
     {
-        float convertedCredits = score * 0.40f;
+        float convertedCredits = score * 0.20f;
         return (int)convertedCredits;
     }
     //DELETE BEFORE MERGING
     public void UpdateUI()
     {
-        _highscoreText.text = _highscore.ToString();
-        _creditText.text = _credits.ToString();
+        _highscoreText.text ="Highscore: " + _highscore.ToString();
+        _creditText.text ="Credit: " + _credits.ToString();
     }
     #region non implemented methods
     public void OnGameOver() { }
