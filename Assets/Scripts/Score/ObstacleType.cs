@@ -1,7 +1,7 @@
 using System;  
     
     [Serializable]
-     public enum ObstacleTypes
+    public enum ObstacleTypes
     {
         Coin,
         Bouncer,

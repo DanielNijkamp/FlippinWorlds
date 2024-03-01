@@ -10,11 +10,5 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 024b3f28b42f412498e16b3131541389, type: 3}
-  m_Name: ScoreConfiguration
+  m_Name: Obstacle value 1
   m_EditorClassIdentifier: 
-  Coins: 0
-  Bouncer: 10
-  SmallBouncer: 0
-  TurningDoor: 0
-  Portal: 0
-  Boosters: 12

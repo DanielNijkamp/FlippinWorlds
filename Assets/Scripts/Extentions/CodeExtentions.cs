@@ -6,14 +6,10 @@ public static class CodeExtentions
 {
     public static TEnum Parse <TEnum>(this string context) where TEnum : struct, Enum
     {
-        if (Enum.TryParse(context, true, out TEnum result))
-        {
-            return result;
-        }
-        else
-        {
-            throw new ArgumentException($"Unable to parse '{context}' to enum type {typeof(TEnum)}");
-        }
+        return Enum.TryParse(context, true, out TEnum result) 
+            ? result 
+            : throw new ArgumentException($"Unable to parse '{context}' to enum type {typeof(TEnum)}");
+        
     }
 
 }

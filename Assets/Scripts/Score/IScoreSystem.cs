@@ -1,7 +1,9 @@
+using UnityEngine.Events;
 public interface ScoreSystem 
 {
+    int _score { get; set; }
+    UnityEvent<int> _onValueChanged { get;  set; }
 
-    void OnGameOver();
-    void OnGameOver(int Score);
+
     void AddPoints(string value);
 }
