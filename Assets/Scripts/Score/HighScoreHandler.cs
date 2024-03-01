@@ -20,7 +20,6 @@ public class HighScoreHandler : MonoBehaviour , ScoreSystem
             _highscore = score;
 
         _credits += CreditsConversion(score);
-        UpdateUI();
     }
 
     public int CreditsConversion(int score)
@@ -28,12 +27,7 @@ public class HighScoreHandler : MonoBehaviour , ScoreSystem
         float convertedCredits = score * 0.20f;
         return (int)convertedCredits;
     }
-    //DELETE BEFORE MERGING
-    public void UpdateUI()
-    {
-        _highscoreText.text ="Highscore: " + _highscore.ToString();
-        _creditText.text ="Credit: " + _credits.ToString();
-    }
+
     #region non implemented methods
     public void OnGameOver() { }
     public void AddPoints(string value) { }

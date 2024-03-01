@@ -44,26 +44,12 @@ public class SessionScoreHandler : MonoBehaviour , ScoreSystem
                 print("Could not find the Obect type");
                 break;
         }
-        UpdateUI();
     }
    
     public void OnGameOver()
     {
         HighScoreHandler._highScoreHandler.OnGameOver(_score);
     }
-
-    //DELETE BEFORE MERGING
-    #region debugTests
-    public void UpdateUI()
-    {
-        _scoreText.text = "Current Score: " + _score.ToString();
-    }
-    public void DebugButton(string value)
-    {
-        AddPoints(value);
-    }
-    
-    #endregion
 
     public void OnGameOver(int Score) { }
 }
