@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: ScoreConfiguration
   m_EditorClassIdentifier: 
   Coins: 0
-  Bouncer: 0
+  Bouncer: 10
   SmallBouncer: 0
   TurningDoor: 0
   Portal: 0
-  Boosters: 0
+  Boosters: 12
