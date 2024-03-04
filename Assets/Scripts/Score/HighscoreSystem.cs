@@ -9,7 +9,7 @@ public class HighscoreSystem : MonoBehaviour , ScoreSystem
     [Header("Config")]
     [SerializeField] private ObstacleValue _obstacleValues;
     public UnityEvent<int> _onValueChanged { get; set; } = new UnityEvent<int>();
-    public float ScoreMultiplier { get; set; } = 1;
+    private float _scoreMultiplier { get; set; } = 1;
     private int _credits;
     public int _score { get; set; }
 
@@ -19,7 +19,10 @@ public class HighscoreSystem : MonoBehaviour , ScoreSystem
         //_onValueChanged.AddListener();
     }
 
-
+    public void SetScoreMultiplier(float newMultiplier)
+    {
+        _scoreMultiplier = newMultiplier;
+    }
     public void AddPoints(string value)
     {
         ObstacleTypes type = value.Parse<ObstacleTypes>();
@@ -50,7 +53,7 @@ public class HighscoreSystem : MonoBehaviour , ScoreSystem
     }
     private int AddMultiplierBonus(int number)
     {
-        return (int)(number * ScoreMultiplier);
+        return (int)(number * _scoreMultiplier);
     }
     public int CreditsConversion(int score)
     {
