@@ -9,12 +9,13 @@ public class HighscoreSystem : MonoBehaviour , ScoreSystem
     [Header("Config")]
     [SerializeField] private ObstacleValue _obstacleValues;
     public UnityEvent<int> _onValueChanged { get; set; } = new UnityEvent<int>();
-    public float ScoreMultiplier = 1;
+    public float ScoreMultiplier { get; set; } = 1;
     private int _credits;
     public int _score { get; set; }
 
     private void Awake()
     {
+        //subscribe to event to Update UI 
         //_onValueChanged.AddListener();
     }
 
@@ -25,29 +26,29 @@ public class HighscoreSystem : MonoBehaviour , ScoreSystem
         switch (type)
         {
             case ObstacleTypes.Coin:
-                _score += CalculateMultiplierBonus(_obstacleValues.Coins);
+                _score += AddMultiplierBonus(_obstacleValues.Coins);
                 break;
             case ObstacleTypes.Bouncer:
-                _score += CalculateMultiplierBonus(_obstacleValues.Bouncer);
+                _score += AddMultiplierBonus(_obstacleValues.Bouncer);
                 break;
             case ObstacleTypes.Booster:
-                _score += CalculateMultiplierBonus(_obstacleValues.Boosters);
+                _score += AddMultiplierBonus(_obstacleValues.Boosters);
                 break;
             case ObstacleTypes.Portal:
-                _score += CalculateMultiplierBonus(_obstacleValues.Portal);
+                _score += AddMultiplierBonus(_obstacleValues.Portal);
                 break;
             case ObstacleTypes.SmallBouncer:
-                _score += CalculateMultiplierBonus(_obstacleValues.SmallBouncer);
+                _score += AddMultiplierBonus(_obstacleValues.SmallBouncer);
                 break;
             case ObstacleTypes.TurningDoor:
-                _score += CalculateMultiplierBonus(_obstacleValues.TurningDoor);
+                _score += AddMultiplierBonus(_obstacleValues.TurningDoor);
                 break;
             default:
                 print("Could not find the Obect type");
                 break;
         }
     }
-    private int CalculateMultiplierBonus(int number)
+    private int AddMultiplierBonus(int number)
     {
         return (int)(number * ScoreMultiplier);
     }
