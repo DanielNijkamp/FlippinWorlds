@@ -10,7 +10,6 @@ public class HighscoreSystem : MonoBehaviour , ScoreSystem
     [SerializeField] private ObstacleValue _obstacleValues;
     public UnityEvent<int> _onValueChanged { get; set; } = new UnityEvent<int>();
     private float _scoreMultiplier { get; set; } = 1;
-    private int _credits;
     public int _score { get; set; }
 
     private void Awake()
@@ -54,10 +53,5 @@ public class HighscoreSystem : MonoBehaviour , ScoreSystem
     private int AddMultiplierBonus(int number)
     {
         return (int)(number * _scoreMultiplier);
-    }
-    public int CreditsConversion(int score)
-    {
-        float convertedCredits = score * 0.20f;
-        return (int)convertedCredits;
     }
 }
