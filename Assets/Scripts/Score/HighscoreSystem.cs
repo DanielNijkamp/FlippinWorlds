@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using TMPro;
 
-public class HighscoreSystem : MonoBehaviour , ScoreSystem
+public class HighscoreSystem : MonoBehaviour , IScoreSystem
 {
     [Header("Config")]
     [SerializeField] private ObstacleValue _obstacleValues;
@@ -49,6 +49,7 @@ public class HighscoreSystem : MonoBehaviour , ScoreSystem
                 print("Could not find the Obect type");
                 break;
         }
+        _onValueChanged?.Invoke(_score);
     }
     private int AddMultiplierBonus(int number)
     {

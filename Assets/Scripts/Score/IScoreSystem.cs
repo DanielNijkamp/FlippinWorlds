@@ -1,5 +1,5 @@
 using UnityEngine.Events;
-public interface ScoreSystem 
+public interface IScoreSystem 
 {
     int _score { get; set; }
     UnityEvent<int> _onValueChanged { get;  set; }
