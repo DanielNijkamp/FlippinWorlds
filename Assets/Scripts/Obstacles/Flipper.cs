@@ -1,21 +1,51 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-public class Flipper : MonoBehaviour
+namespace Obstacles
 {
-    [SerializeField] private float _strength;
-    [SerializeField] private float _range;
-    [SerializeField] private UnityEvent _onFlung;
-    
-    public void Fling(GameObject target)
+    [RequireComponent(typeof(HingeJoint))]
+    public sealed class Flipper : MonoBehaviour
     {
-        if (Vector3.Distance(target.transform.position, transform.position) <= _range)
+        [SerializeField] private UnityEvent _onFlip;
+
+        [SerializeField] private float _damping;
+        [SerializeField] private float _strengh;
+        [SerializeField] private float _returnTime;
+
+        private HingeJoint _hinge;
+        private float _restPosition;
+        private float _pressedPosition;
+
+        private void Start()
         {
-            var transform1 = transform;
-            var flipDirection = (target.transform.position - transform1.position).normalized + transform1.up;
-            target.GetComponent<Rigidbody>().AddForce(flipDirection * _strength);
-            
-            _onFlung?.Invoke();
+            _hinge = GetComponent<HingeJoint>();
+            _restPosition = _hinge.limits.min;
+            _pressedPosition = _hinge.limits.max;
         }
-    }
+
+        public void Flip()
+        {
+            SetAngle(_pressedPosition);
+            _onFlip?.Invoke();
+
+            Invoke(nameof(ReturnToRestPosition), _returnTime);
+        }
+
+        private void SetAngle(float angle)
+        {
+            JointSpring spring = new JointSpring
+            {
+                spring = _strengh,
+                damper = _damping,
+                targetPosition = angle
+            };
+
+            _hinge.spring = spring;
+        }
+
+        private void ReturnToRestPosition()
+        {
+            SetAngle(_restPosition);
+        }
+    } 
 }

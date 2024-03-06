@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -11,20 +8,14 @@ public class TouchInput : MonoBehaviour
 
     private void Update()
     {
-        if (Input.touchCount <= 0) return;
+        if (Input.touchCount <= 0)
+            return;
         
         Touch touch = Input.GetTouch(0);
 
-        if (touch.phase == TouchPhase.Began)
-        {
-            if (touch.position.x < Screen.width / 2)
-            {
-                onLeftTouch?.Invoke();
-            }
-            else
-            {
-                onRightTouch?.Invoke();
-            }
-        }
+        if (touch.phase != TouchPhase.Began)
+            return;
+        
+        (touch.position.x < Screen.width / 2 ? onLeftTouch : onRightTouch)?.Invoke();
     }
 }
