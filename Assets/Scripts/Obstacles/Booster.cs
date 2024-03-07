@@ -2,25 +2,30 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.Serialization;
 
 namespace Obstacles
 {
-    //TODO: check if booster should boost:
-    //in the direction the ball comes in
-    //or in 1 direction only
-    
     [RequireComponent(typeof(Collider))]
     public sealed class Booster : MonoBehaviour
     {
+        [SerializeField] private UnityEvent _onBoost;
         [SerializeField] private float _boostStrength;
-
+        [SerializeField] private float _directionThreshold;
+        
         private void OnTriggerEnter(Collider collision)
         {
-            var boostDirection = (collision.transform.position - transform.position).normalized;
+            var relativePosition = collision.transform.position - transform.position;
+            var boostDirection = relativePosition.normalized;
             
-            collision.gameObject
-                .GetComponent<Rigidbody>()
-                .AddForce(_boostStrength * -boostDirection, ForceMode.Impulse);
+            if (relativePosition.y > _directionThreshold)
+            {
+                collision.gameObject
+                    .GetComponent<Rigidbody>()
+                    .AddForce(_boostStrength * -boostDirection, ForceMode.Impulse);
+                    _onBoost?.Invoke();
+            }
         }
     }
 }
