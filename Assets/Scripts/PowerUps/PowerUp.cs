@@ -8,6 +8,7 @@ using UnityEngine;
 //respawntime variable public
 //onpickup method
 //double points powerup and others in different classes
+//ienumerator duration add
 public abstract class PowerUp : MonoBehaviour
 {
     public float respawnTime = 10f; // Adjust the respawn time in the Unity Inspector
@@ -18,7 +19,13 @@ public abstract class PowerUp : MonoBehaviour
         if (other.CompareTag("Ball")) // Assuming the PowerUp should be collected by the player
         {
             OnPickup();
-            Debug.Log("Double Points");
+            Debug.Log("Double Points active");
+            StartCoroutine(Respawn());
+        }
+        if (other.CompareTag("Ball"))
+        {
+            OnPickup();
+            Debug.Log("Double Bounce");
             StartCoroutine(Respawn());
         }
     }
