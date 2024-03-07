@@ -9,11 +9,9 @@ public class LifeSystem : MonoBehaviour, IScoreSystem
     private PlayerSpawner _playerSpawner;
     private void Awake()
     {
-        //_playerSpawner = PlayerSpawner.Instance;
         if (Instance == null)
         {
             Instance = this;
-            print("static life system made");
         }
         else
         {
@@ -22,8 +20,8 @@ public class LifeSystem : MonoBehaviour, IScoreSystem
     }
     private void Start()  
     {
-        //_playerSpawner.SpawnPlayer(); 
-        PlayerSpawner.Instance.SpawnPlayer();
+        _playerSpawner = PlayerSpawner.Instance;
+        _playerSpawner.SpawnPlayer();
     }
     public void SubtrackLife()
     {
@@ -39,8 +37,7 @@ public class LifeSystem : MonoBehaviour, IScoreSystem
     public void RespawnPlayer()
     {
         if (_score > 0)
-            // _playerSpawner.SpawnPlayer();
-            PlayerSpawner.Instance.SpawnPlayer();
+            _playerSpawner.SpawnPlayer();
         else
             Debug.LogError("Player is out of lifes");
     }
