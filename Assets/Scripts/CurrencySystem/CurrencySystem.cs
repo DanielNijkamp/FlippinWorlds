@@ -1,18 +1,21 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-
 public class CurrencySystem : ScoreSystem
 {
-    // Start is called before the first frame update
-    void Start()
+     [SerializeField] private float convertionMultiplier;
+    public void ConvertToCurrency(int value)
     {
-        
+        int convertedCurrency = (int)(value * convertionMultiplier);
+    }
+    public override void AddPoints(string value)
+    {
+        int intValue = int.Parse(value);
+        _score += intValue;
+        _onValueChanged?.Invoke(intValue);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SubtractPoints(int value)
     {
-        
+        _score -= value;
+        _onValueChanged?.Invoke(_score);
     }
 }

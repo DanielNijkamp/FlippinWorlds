@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-public class LifeSystem : IScoreSystem
+public class LifeSystem : ScoreSystem
 {
     [SerializeField] private UnityEvent _onGameOver = new UnityEvent();
 
