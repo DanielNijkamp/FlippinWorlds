@@ -31,6 +31,7 @@ public class DoubleBalls : PowerUp
 
             // Destroy the extra ball after the specified duration
             Destroy(extraBall);
+            hasInstantiated=false;
             Debug.Log("Double Ball Timer Ended");
         }
     }
