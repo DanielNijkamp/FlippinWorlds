@@ -1,44 +1,28 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-public class LifeSystem : MonoBehaviour, IScoreSystem
+public class LifeSystem : IScoreSystem
 {
-    public int _score { get; set; } = 3;
-    public UnityEvent<int> _onValueChanged { get; set; }
-    public static LifeSystem Instance;
-    private PlayerSpawner _playerSpawner;
-    private void Awake()
-    {
-        if (Instance == null)
-        {
-            Instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
-    private void Start()  
-    {
-        _playerSpawner = PlayerSpawner.Instance;
-        _playerSpawner.SpawnPlayer();
-    }
+    [SerializeField] private UnityEvent _onGameOver = new UnityEvent();
+
     public void SubtrackLife()
     {
         _score -= 1;
         _onValueChanged?.Invoke(_score);
     }
-    public void AddPoints(string value)
+    public override void AddPoints(string value)
     {
-        int IntValue = int.Parse(value);
-        _score += IntValue;
+        int intValue = int.Parse(value);
+        _score += intValue;
         _onValueChanged?.Invoke(_score);
     }
-    public void RespawnPlayer()
+    public void CheckLifes()
     {
-        if (_score > 0)
-            _playerSpawner.SpawnPlayer();
-        else
-            Debug.LogError("Player is out of lifes");
+        if (_score == 0)
+        {
+            _onGameOver?.Invoke();
+        }
+        
     }
+
 }

@@ -1,9 +1,11 @@
+using UnityEngine;
 using UnityEngine.Events;
-public interface IScoreSystem 
+
+public abstract class IScoreSystem : MonoBehaviour
 {
-    int _score { get; set; }
-    UnityEvent<int> _onValueChanged { get;  set; }
+    [field : SerializeField] protected int _score { get; set; }
+    [field: SerializeField] protected UnityEvent<int> _onValueChanged;
 
 
-    void AddPoints(string value);
+    public abstract void AddPoints(string value);
 }

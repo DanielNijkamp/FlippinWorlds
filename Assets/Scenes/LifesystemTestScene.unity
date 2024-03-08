@@ -999,6 +999,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 633036436b0c43d409802a8351d03b96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <_score>k__BackingField: 9000
+  <_onValueChanged>k__BackingField:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &560475453 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4501731925940668374, guid: 8b4d0f36117fbbb4c93a23a74c135fd4,
