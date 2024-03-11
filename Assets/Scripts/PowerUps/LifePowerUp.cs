@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class LifePowerUp : PowerUp
 {
-    //[SerializeField] private HighscoreSystem _highScoreSystem;
     public float lives;
     protected override void OnPickup()
     {

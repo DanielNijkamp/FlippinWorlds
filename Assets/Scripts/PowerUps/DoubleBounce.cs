@@ -6,10 +6,7 @@ public class NewBehaviourScript : PowerUp
 {
     [SerializeField] private GameObject _targetObject;
     private float waitForSeconds = 5f;
-    private bool isPowerActive = false;
     private bool hasAppliedEffect = false;
-
-    // Store the original size and mass before applying modifications
     private Vector3 originalSize;
     private float originalMass;
 
@@ -20,12 +17,8 @@ public class NewBehaviourScript : PowerUp
 
     private IEnumerator ActivatePower()
     {
-        isPowerActive = true;
-
-        // Check if the effect has not been applied yet
         if (!hasAppliedEffect)
         {
-            // Store the original size and mass
             originalSize = _targetObject.transform.localScale;
 
             Rigidbody rb = _targetObject.GetComponent<Rigidbody>();
@@ -33,23 +26,12 @@ public class NewBehaviourScript : PowerUp
             {
                 originalMass = rb.mass;
             }
-
-            // Make the ball smaller and reduce mass
             StartCoroutine(ModifyBallPropertiesOverTime(0.8f, 0.8f, 1f));
-
-            // Set the flag to true to indicate that the effect has been applied
             hasAppliedEffect = true;
         }
-
         yield return new WaitForSeconds(waitForSeconds);
-
-        // Revert changes after the power-up duration
         StartCoroutine(ModifyBallPropertiesOverTime(1f, 1f, 1f));
-
-        // Reset the flag after the power-up duration
         hasAppliedEffect = false;
-
-        isPowerActive = false;
     }
 
     private IEnumerator ModifyBallPropertiesOverTime(float sizeMultiplier, float massMultiplier, float duration)
@@ -63,8 +45,6 @@ public class NewBehaviourScript : PowerUp
         while (elapsedTime < duration)
         {
             _targetObject.transform.localScale = Vector3.Lerp(startSize, targetSize, elapsedTime / duration);
-
-            // Modify mass (if Rigidbody is present)
             Rigidbody rb = _targetObject.GetComponent<Rigidbody>();
             if (rb != null)
             {
@@ -74,8 +54,6 @@ public class NewBehaviourScript : PowerUp
             elapsedTime += Time.deltaTime;
             yield return null;
         }
-
-        // Ensure final values are set
         _targetObject.transform.localScale = targetSize;
 
         Rigidbody finalRb = _targetObject.GetComponent<Rigidbody>();

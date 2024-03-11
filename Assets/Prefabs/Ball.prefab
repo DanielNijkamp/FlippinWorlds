@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3701989559790341287}
   - component: {fileID: 7448740435218465498}
   m_Layer: 0
-  m_Name: bally
+  m_Name: Ball
   m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,13 +28,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8682931103699898145}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.4777815, y: 0.47778103, z: 0.52127284, w: 0.52127224}
+  m_LocalRotation: {x: -0.47778305, y: 0.47778222, z: 0.5212716, w: 0.521271}
   m_LocalPosition: {x: -0.259, y: -6.484, z: -2.421}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -85.015, y: -0.001, z: 90.001}
 --- !u!33 &756295875283362174
 MeshFilter:
   m_ObjectHideFlags: 0

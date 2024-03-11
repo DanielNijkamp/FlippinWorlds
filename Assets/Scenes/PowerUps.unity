@@ -2943,7 +2943,7 @@ PrefabInstance:
     - target: {fileID: 8682931103699898145, guid: 64f7c288350ad0547a4c4b1325f3845b,
         type: 3}
       propertyPath: m_Name
-      value: bally
+      value: Ball.prefab
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

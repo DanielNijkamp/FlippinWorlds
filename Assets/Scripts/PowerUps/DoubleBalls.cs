@@ -19,17 +19,10 @@ public class DoubleBalls : PowerUp
         if (!hasInstantiated)
         {
             Debug.Log("Double Ball Timer Started");
-
-            // Instantiate a new ball and store the reference
             extraBall = Instantiate(_targetObject, transform.position, Quaternion.identity);
             hasInstantiated = true;
 
-            // Optionally, you can set the extraBall's position, rotation, etc., based on your requirements.
-            // extraBall.transform.position = new Vector3(x, y, z);
-
             yield return new WaitForSeconds(waitForSeconds);
-
-            // Destroy the extra ball after the specified duration
             Destroy(extraBall);
             hasInstantiated=false;
             Debug.Log("Double Ball Timer Ended");
