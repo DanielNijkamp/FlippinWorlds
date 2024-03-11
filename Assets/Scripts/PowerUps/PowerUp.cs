@@ -24,9 +24,9 @@ public abstract class PowerUp : MonoBehaviour
     protected abstract void OnPickup();
     private System.Collections.IEnumerator Respawn()
     {
-        model.SetActive(false);
+        _model.SetActive(false);
         yield return new WaitForSeconds(_respawnTime);
-        model.SetActive(true);
+        _model.SetActive(true);
     }
 }
 public class DoublePointsPowerUp : PowerUp
