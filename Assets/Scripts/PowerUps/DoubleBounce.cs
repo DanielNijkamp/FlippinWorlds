@@ -7,8 +7,8 @@ public sealed class DoubleBounce : PowerUp
     [SerializeField] private GameObject _targetObject;
     [SerializeField] private float _effectDuration;
     
-    private Vector3 originalSize;
-    private float originalMass;
+    private Vector3 _originalSize;
+    private float _originalMass;
     private Rigidbody _rigidbody;
 
     private void Start()
@@ -22,7 +22,7 @@ public sealed class DoubleBounce : PowerUp
 
     private IEnumerator ActivatePower()
     {
-        originalSize = _targetObject.transform.localScale;
+        _originalSize = _targetObject.transform.localScale;
         StartCoroutine(ApplyEffectOverTime(0.8f, 0.8f, 1f));
             
         yield return new WaitForSeconds(_effectDuration);
@@ -32,9 +32,9 @@ public sealed class DoubleBounce : PowerUp
     {
         var elapsedTime = 0f;
         var startSize = _targetObject.transform.localScale;
-        var startMass = originalMass;
-        var targetSize = originalSize * sizeMultiplier;
-        var targetMass = originalMass * massMultiplier;
+        var startMass = _originalMass;
+        var targetSize = _originalSize * sizeMultiplier;
+        var targetMass = _originalMass * massMultiplier;
         
         while (elapsedTime < duration)
         {
