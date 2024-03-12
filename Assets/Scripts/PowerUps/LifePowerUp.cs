@@ -2,12 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LifePowerUp : PowerUp
+public sealed class LifePowerUp : PowerUp
 {
-    public float lives;
+    [SerializeField] private LifeSystem _lifeSystem;
     protected override void OnPickup()
     {
-        lives += 1;
-        Debug.Log("Extra Life Added");
+        _lifeSystem.AddPoints("1");
     }
 }

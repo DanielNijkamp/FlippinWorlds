@@ -5,25 +5,16 @@ using UnityEngine;
 public abstract class PowerUp : MonoBehaviour
 {
     [SerializeField] protected float _respawnTime;
-    [SerializeField] protected GameObject _model;
+    [SerializeField] private GameObject _model;
     [SerializeField] private Collider _collider;
+
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Ball"))
-        {
-            OnPickup();
-            Debug.Log("Double Points active");
-            StartCoroutine(Respawn());
-        }
-        if (other.CompareTag("Ball"))
-        {
-            OnPickup();
-            Debug.Log("Double Bounce");
-            StartCoroutine(Respawn());
-        }
+        OnPickup();
+        StartCoroutine(Respawn());
     }
-    protected abstract void OnPickup();
-    private System.Collections.IEnumerator Respawn()
+
+    private IEnumerator Respawn()
     {
         _model.SetActive(false);
         _collider.enabled = false;
@@ -31,23 +22,7 @@ public abstract class PowerUp : MonoBehaviour
         _model.SetActive(true);
         _collider.enabled = true;
     }
-}
-public class DoublePointsPowerUp : PowerUp
-{
-    protected override void OnPickup()
-    {
-        Debug.Log("Double Points Collected!");
-    }
-    private void RespawnPowerUp()
-    {
-        transform.position = new Vector3(0f, 1f, 0f);
-    }
-}
+    
+    protected abstract void OnPickup();
 
-public class AnotherPowerUp : PowerUp
-{
-    protected override void OnPickup()
-    {
-        Debug.Log("Another PowerUp Collected!");
-    }
 }
