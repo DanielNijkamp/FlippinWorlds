@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class DoubleBalls : PowerUp
+public sealed class DoubleBalls : PowerUp
 {
     [SerializeField] private GameObject _targetObject;
     [SerializeField] private float _effectDuration;
