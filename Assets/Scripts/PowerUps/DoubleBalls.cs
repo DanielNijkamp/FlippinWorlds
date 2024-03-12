@@ -9,14 +9,19 @@ public class DoubleBalls : PowerUp
     private GameObject _copiedObject;
     protected override void OnPickup()
     {
-        StartCoroutine(Copy());
+        if (_copiedObject == null) // Check if there is no existing copied object
+        {
+            StartCoroutine(Copy());
+        }
     }
-
     private IEnumerator Copy()
     {
+        {
             Debug.Log("Double Ball Timer Started");
             _copiedObject = Instantiate(_targetObject, transform.position, Quaternion.identity);
             yield return new WaitForSeconds(_effectDuration);
             Destroy(_copiedObject);
+            _copiedObject = null;
+        }
     }
 }

@@ -6,6 +6,7 @@ public abstract class PowerUp : MonoBehaviour
 {
     [SerializeField] protected float _respawnTime;
     [SerializeField] protected GameObject _model;
+    [SerializeField] private Collider _collider;
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Ball"))
@@ -25,8 +26,10 @@ public abstract class PowerUp : MonoBehaviour
     private System.Collections.IEnumerator Respawn()
     {
         _model.SetActive(false);
+        _collider.enabled = false;
         yield return new WaitForSeconds(_respawnTime);
         _model.SetActive(true);
+        _collider.enabled = true;
     }
 }
 public class DoublePointsPowerUp : PowerUp
