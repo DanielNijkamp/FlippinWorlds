@@ -5,27 +5,18 @@ using UnityEngine;
 public class DoubleBalls : PowerUp
 {
     [SerializeField] private GameObject _targetObject;
-    float waitForSeconds = 20f;
-    private bool hasInstantiated = false;
-    private GameObject extraBall;
-
+    [SerializeField] private float _effectDuration;
+    private GameObject _copiedObject;
     protected override void OnPickup()
     {
-        StartCoroutine(ExtraBall());
+        StartCoroutine(Copy());
     }
 
-    IEnumerator ExtraBall()
+    private IEnumerator Copy()
     {
-        if (!hasInstantiated)
-        {
             Debug.Log("Double Ball Timer Started");
-            extraBall = Instantiate(_targetObject, transform.position, Quaternion.identity);
-            hasInstantiated = true;
-
-            yield return new WaitForSeconds(waitForSeconds);
-            Destroy(extraBall);
-            hasInstantiated=false;
-            Debug.Log("Double Ball Timer Ended");
-        }
+            _copiedObject = Instantiate(_targetObject, transform.position, Quaternion.identity);
+            yield return new WaitForSeconds(_effectDuration);
+            Destroy(_copiedObject);
     }
 }
