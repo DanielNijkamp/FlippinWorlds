@@ -4,13 +4,11 @@ using UnityEngine;
 using UnityEngine.Events;
 using TMPro;
 
-public class HighscoreSystem : MonoBehaviour , ScoreSystem
+public class HighscoreSystem : ScoreSystem
 {
     [Header("Config")]
     [SerializeField] private ObstacleValue _obstacleValues;
-    public UnityEvent<int> _onValueChanged { get; set; } = new UnityEvent<int>();
     private float _scoreMultiplier { get; set; } = 1;
-    public int _score { get; set; }
 
     private void Awake()
     {
@@ -22,7 +20,7 @@ public class HighscoreSystem : MonoBehaviour , ScoreSystem
     {
         _scoreMultiplier = newMultiplier;
     }
-    public void AddPoints(string value)
+    public override void AddPoints(string value)
     {
         ObstacleTypes type = value.Parse<ObstacleTypes>();
         switch (type)
@@ -49,6 +47,7 @@ public class HighscoreSystem : MonoBehaviour , ScoreSystem
                 print("Could not find the Obect type");
                 break;
         }
+       // _onValueChanged?.Invoke(_score);
     }
     private int AddMultiplierBonus(int number)
     {
