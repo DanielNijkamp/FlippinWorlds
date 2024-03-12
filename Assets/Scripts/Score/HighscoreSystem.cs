@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using TMPro;
 
-public class HighscoreSystem : IScoreSystem
+public class HighscoreSystem : ScoreSystem
 {
     [Header("Config")]
     [SerializeField] private ObstacleValue _obstacleValues;
