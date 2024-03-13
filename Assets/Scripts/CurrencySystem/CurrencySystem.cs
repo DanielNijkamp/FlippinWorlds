@@ -2,6 +2,7 @@ using UnityEngine;
 public class CurrencySystem : ScoreSystem
 {
      [SerializeField] private float convertionMultiplier;
+
     public void ConvertToCurrency(int value)
     {
         int convertedCurrency = (int)(value * convertionMultiplier);
