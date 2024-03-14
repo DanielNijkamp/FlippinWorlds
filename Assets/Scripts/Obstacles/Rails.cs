@@ -44,7 +44,7 @@ namespace Obstacles
         }
         private void OnTriggerEnter(Collider other)
         {
-            if (other.CompareTag(_copyTag))
+            if (!other.CompareTag(_copyTag))
             {
                 StartCoroutine(ActivateRails());
             }

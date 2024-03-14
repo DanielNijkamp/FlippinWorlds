@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 namespace Obstacles
@@ -11,9 +12,11 @@ namespace Obstacles
             if (collision.gameObject.CompareTag(_tag))
             {
                 Destroy(collision.gameObject);
-                return;
             }
-            base.OnCollisionEnter(collision);
+            else
+            {
+                base.OnCollisionEnter(collision);
+            }
         }
     }
 }

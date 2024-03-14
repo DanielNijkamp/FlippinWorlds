@@ -10,12 +10,6 @@ public class HighscoreSystem : ScoreSystem
     [SerializeField] private ObstacleValue _obstacleValues;
     private float _scoreMultiplier { get; set; } = 1;
 
-    private void Awake()
-    {
-        //subscribe to event to Update UI 
-        //_onValueChanged.AddListener();
-    }
-
     public void SetScoreMultiplier(float newMultiplier)
     {
         _scoreMultiplier = newMultiplier;
@@ -44,10 +38,10 @@ public class HighscoreSystem : ScoreSystem
                 _score += AddMultiplierBonus(_obstacleValues.TurningDoor);
                 break;
             default:
-                print("Could not find the Obect type");
+                print("Could not find the Object type");
                 break;
         }
-       // _onValueChanged?.Invoke(_score);
+       _onValueChanged?.Invoke(_score);
     }
     private int AddMultiplierBonus(int number)
     {

@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public sealed class DoubleBounce : PowerUp
-{
+{ 
     [SerializeField] private GameObject _targetObject;
     [SerializeField] private float _effectDuration;
     

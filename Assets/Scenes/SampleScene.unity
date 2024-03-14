@@ -540,7 +540,19 @@ MonoBehaviour:
   _radius: 2
   _onCollision:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1009452524}
+        m_TargetAssemblyTypeName: HighscoreSystem, Assembly-CSharp
+        m_MethodName: AddPoints
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: SmallBouncer
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!64 &65896161
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -755,7 +767,7 @@ Transform:
   m_GameObject: {fileID: 80532445}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071069, y: 9.313226e-10, z: -0, w: 0.70710677}
-  m_LocalPosition: {x: 0.1754664, y: 0.36153996, z: -0.65400064}
+  m_LocalPosition: {x: 0.1754664, y: 0.36153996, z: -0.71591294}
   m_LocalScale: {x: 100, y: 99.99998, z: 99.99998}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -777,7 +789,19 @@ MonoBehaviour:
   _radius: 2
   _onCollision:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1009452524}
+        m_TargetAssemblyTypeName: HighscoreSystem, Assembly-CSharp
+        m_MethodName: AddPoints
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: SmallBouncer
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!64 &80532448
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1098,7 +1122,19 @@ MonoBehaviour:
   _radius: 2
   _onCollision:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1009452524}
+        m_TargetAssemblyTypeName: HighscoreSystem, Assembly-CSharp
+        m_MethodName: AddPoints
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: SmallBouncer
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!64 &88346304
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1366,6 +1402,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 798724607}
+        m_TargetAssemblyTypeName: Obstacles.ClosingPlate, Assembly-CSharp
+        m_MethodName: TogglePlate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _tag: Copy
 --- !u!1 &118691129
 GameObject:
@@ -1431,7 +1479,7 @@ Transform:
   m_GameObject: {fileID: 119623918}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071069, y: 9.313226e-10, z: -0, w: 0.70710677}
-  m_LocalPosition: {x: 0.121507026, y: 0.35789552, z: -0.62201476}
+  m_LocalPosition: {x: 0.121507026, y: 0.35789552, z: -0.68392706}
   m_LocalScale: {x: 100, y: 99.99998, z: 99.99998}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1453,7 +1501,19 @@ MonoBehaviour:
   _radius: 2
   _onCollision:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1009452524}
+        m_TargetAssemblyTypeName: HighscoreSystem, Assembly-CSharp
+        m_MethodName: AddPoints
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: SmallBouncer
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!64 &119623921
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1605,7 +1665,19 @@ MonoBehaviour:
   _radius: 2
   _onCollision:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1009452524}
+        m_TargetAssemblyTypeName: HighscoreSystem, Assembly-CSharp
+        m_MethodName: AddPoints
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: SmallBouncer
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!64 &122807895
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1705,6 +1777,170 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 122807892}
   m_Mesh: {fileID: -2746142260806068395, guid: b93553f02b9eb0d4da6c223a7c48de42, type: 3}
+--- !u!1 &124930356
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 124930357}
+  - component: {fileID: 124930362}
+  - component: {fileID: 124930361}
+  - component: {fileID: 124930360}
+  - component: {fileID: 124930359}
+  - component: {fileID: 124930358}
+  m_Layer: 0
+  m_Name: Bumper.002 (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &124930357
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 124930356}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.7071069, y: 9.313226e-10, z: -0, w: 0.70710677}
+  m_LocalPosition: {x: 0.159, y: 0.3474, z: -0.601}
+  m_LocalScale: {x: 100, y: 99.99998, z: 99.99998}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 979816469}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &124930358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 124930356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5457226cc1b64852951673e2cc97dc63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _strength: 45
+  _radius: 2
+  _onCollision:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1009452524}
+        m_TargetAssemblyTypeName: HighscoreSystem, Assembly-CSharp
+        m_MethodName: AddPoints
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Bouncer
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!64 &124930359
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 124930356}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 55
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7774897576399412552, guid: b93553f02b9eb0d4da6c223a7c48de42, type: 3}
+--- !u!54 &124930360
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 124930356}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 55
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!23 &124930361
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 124930356}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 0603e577d838eb84eaee70124618c3d8, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &124930362
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 124930356}
+  m_Mesh: {fileID: 7774897576399412552, guid: b93553f02b9eb0d4da6c223a7c48de42, type: 3}
 --- !u!1 &152319658
 GameObject:
   m_ObjectHideFlags: 0
@@ -1975,7 +2211,19 @@ MonoBehaviour:
   _radius: 2
   _onCollision:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1009452524}
+        m_TargetAssemblyTypeName: HighscoreSystem, Assembly-CSharp
+        m_MethodName: AddPoints
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: SmallBouncer
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!64 &184944019
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2201,7 +2449,19 @@ MonoBehaviour:
   _radius: 2
   _onCollision:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1009452524}
+        m_TargetAssemblyTypeName: HighscoreSystem, Assembly-CSharp
+        m_MethodName: AddPoints
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: SmallBouncer
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!64 &221194765
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2628,7 +2888,19 @@ MonoBehaviour:
   _radius: 2
   _onCollision:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1009452524}
+        m_TargetAssemblyTypeName: HighscoreSystem, Assembly-CSharp
+        m_MethodName: AddPoints
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: SmallBouncer
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!64 &247921099
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2864,7 +3136,7 @@ Transform:
   m_GameObject: {fileID: 269192680}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071069, y: 9.313226e-10, z: -0, w: 0.70710677}
-  m_LocalPosition: {x: 0.1132583, y: 0.362599, z: -0.6632956}
+  m_LocalPosition: {x: 0.1132583, y: 0.362599, z: -0.7252079}
   m_LocalScale: {x: 100, y: 99.99998, z: 99.99998}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2886,7 +3158,19 @@ MonoBehaviour:
   _radius: 2
   _onCollision:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1009452524}
+        m_TargetAssemblyTypeName: HighscoreSystem, Assembly-CSharp
+        m_MethodName: AddPoints
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: SmallBouncer
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!64 &269192683
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3295,7 +3579,19 @@ MonoBehaviour:
   _radius: 2
   _onCollision:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1009452524}
+        m_TargetAssemblyTypeName: HighscoreSystem, Assembly-CSharp
+        m_MethodName: AddPoints
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Bouncer
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!64 &324530816
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3599,7 +3895,19 @@ MonoBehaviour:
   _radius: 2
   _onCollision:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1009452524}
+        m_TargetAssemblyTypeName: HighscoreSystem, Assembly-CSharp
+        m_MethodName: AddPoints
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Bouncer
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!64 &370019509
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4012,7 +4320,19 @@ MonoBehaviour:
   _radius: 2
   _onCollision:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1009452524}
+        m_TargetAssemblyTypeName: HighscoreSystem, Assembly-CSharp
+        m_MethodName: AddPoints
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Bouncer
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!64 &395871041
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4300,7 +4620,6 @@ Transform:
   - {fileID: 14501684}
   - {fileID: 1866210239}
   - {fileID: 521541699}
-  - {fileID: 1023657289}
   m_Father: {fileID: 1829912123}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &486408559
@@ -4778,7 +5097,7 @@ Transform:
   m_GameObject: {fileID: 551433549}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071069, y: 9.313226e-10, z: -0, w: 0.70710677}
-  m_LocalPosition: {x: 0.15085025, y: 0.35551602, z: -0.60112953}
+  m_LocalPosition: {x: 0.15085025, y: 0.35551602, z: -0.66304183}
   m_LocalScale: {x: 100, y: 99.99998, z: 99.99998}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4800,7 +5119,19 @@ MonoBehaviour:
   _radius: 2
   _onCollision:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1009452524}
+        m_TargetAssemblyTypeName: HighscoreSystem, Assembly-CSharp
+        m_MethodName: AddPoints
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: SmallBouncer
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!64 &551433552
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5006,7 +5337,7 @@ PrefabInstance:
     - target: {fileID: 6197216385614586647, guid: d657c7fdb8d720d4b823aa849453c7e3,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.0301117
+      value: -0.1339
       objectReference: {fileID: 0}
     - target: {fileID: 6197216385614586647, guid: d657c7fdb8d720d4b823aa849453c7e3,
         type: 3}
@@ -5016,7 +5347,7 @@ PrefabInstance:
     - target: {fileID: 6197216385614586647, guid: d657c7fdb8d720d4b823aa849453c7e3,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.4519
+      value: -0.5303
       objectReference: {fileID: 0}
     - target: {fileID: 6197216385614586647, guid: d657c7fdb8d720d4b823aa849453c7e3,
         type: 3}
@@ -5218,7 +5549,19 @@ MonoBehaviour:
   _radius: 2
   _onCollision:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1009452524}
+        m_TargetAssemblyTypeName: HighscoreSystem, Assembly-CSharp
+        m_MethodName: AddPoints
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Bouncer
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!64 &603201934
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5485,7 +5828,19 @@ MonoBehaviour:
   _radius: 2
   _onCollision:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1009452524}
+        m_TargetAssemblyTypeName: HighscoreSystem, Assembly-CSharp
+        m_MethodName: AddPoints
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Bouncer
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!64 &685427056
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5721,7 +6076,7 @@ Transform:
   m_GameObject: {fileID: 706760068}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071069, y: 9.313226e-10, z: -0, w: 0.70710677}
-  m_LocalPosition: {x: 0.1945, y: 0.303, z: -0.1274}
+  m_LocalPosition: {x: 0.1893, y: 0.303, z: -0.1683}
   m_LocalScale: {x: 100, y: 99.99998, z: 99.99998}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5739,11 +6094,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5457226cc1b64852951673e2cc97dc63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _strength: 45
-  _radius: 2
+  _strength: 65
+  _radius: 3
   _onCollision:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1009452524}
+        m_TargetAssemblyTypeName: HighscoreSystem, Assembly-CSharp
+        m_MethodName: AddPoints
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Bouncer
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!64 &706760071
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5791,7 +6158,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!23 &706760073
 MeshRenderer:
@@ -5895,7 +6262,19 @@ MonoBehaviour:
   _radius: 2
   _onCollision:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1009452524}
+        m_TargetAssemblyTypeName: HighscoreSystem, Assembly-CSharp
+        m_MethodName: AddPoints
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: SmallBouncer
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!64 &723411821
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6241,7 +6620,19 @@ MonoBehaviour:
   _radius: 3
   _onCollision:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1009452524}
+        m_TargetAssemblyTypeName: HighscoreSystem, Assembly-CSharp
+        m_MethodName: AddPoints
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Bouncer
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!54 &777075877
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6348,6 +6739,147 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 791676712}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &798724601
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 798724602}
+  - component: {fileID: 798724605}
+  - component: {fileID: 798724604}
+  - component: {fileID: 798724603}
+  - component: {fileID: 798724606}
+  - component: {fileID: 798724607}
+  m_Layer: 0
+  m_Name: TopPlate
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &798724602
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798724601}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.07439559, y: -0.6768062, z: -0.0024244536, w: 0.7323884}
+  m_LocalPosition: {x: -0.0724, y: 0.38015, z: -0.8134}
+  m_LocalScale: {x: 3.8277857, y: 3.0863826, z: 0.085074745}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 811721433}
+  m_LocalEulerAnglesHint: {x: 6.067, y: -85.802, z: -6.018}
+--- !u!64 &798724603
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798724601}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4611824978500831468, guid: 8b4d0f36117fbbb4c93a23a74c135fd4, type: 3}
+--- !u!23 &798724604
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798724601}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 3446665568856956015, guid: 13918f69827da7c4fb40b4ed2896ff1f, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &798724605
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798724601}
+  m_Mesh: {fileID: 4611824978500831468, guid: 8b4d0f36117fbbb4c93a23a74c135fd4, type: 3}
+--- !u!95 &798724606
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798724601}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3098428562e3fd645888c15425bcd5e2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &798724607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798724601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9dfbc3da4d46e44e856092071df1cf7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &801333235
 GameObject:
   m_ObjectHideFlags: 0
@@ -6575,8 +7107,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   _damping: 1
-  _strengh: 125
-  _returnTime: 0.5
+  _strengh: 75
+  _returnTime: 0.3
   _reversedConstraints: 1
 --- !u!64 &808064413
 MeshCollider:
@@ -6628,7 +7160,7 @@ HingeJoint:
   m_ExtendedLimits: 0
   m_UseAcceleration: 0
   m_Limits:
-    min: -68.26227
+    min: -90.006386
     max: -0.72631586
     bounciness: 0
     bounceMinVelocity: 0.2
@@ -6786,6 +7318,7 @@ Transform:
   m_Children:
   - {fileID: 1928298257}
   - {fileID: 1847435612}
+  - {fileID: 798724602}
   m_Father: {fileID: 152319659}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &814315636
@@ -7073,7 +7606,19 @@ MonoBehaviour:
   _radius: 2
   _onCollision:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1009452524}
+        m_TargetAssemblyTypeName: HighscoreSystem, Assembly-CSharp
+        m_MethodName: AddPoints
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: SmallBouncer
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!64 &858234036
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7225,7 +7770,19 @@ MonoBehaviour:
   _radius: 2
   _onCollision:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1009452524}
+        m_TargetAssemblyTypeName: HighscoreSystem, Assembly-CSharp
+        m_MethodName: AddPoints
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Bouncer
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!64 &865181080
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7354,13 +7911,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 872389106}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.5605874, y: 0.43097794, z: 0.43097767, w: 0.5605873}
-  m_LocalPosition: {x: 0.2555, y: 0.2898, z: -0.0439}
+  m_LocalRotation: {x: -0.6994268, y: -0.103932805, z: -0.10393297, w: 0.699427}
+  m_LocalPosition: {x: 0.2359, y: 0.2988, z: -0.0477}
   m_LocalScale: {x: 100, y: 99.99998, z: 99.99998}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1533150122}
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 75.106}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: -16.904}
 --- !u!114 &872389108
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7377,7 +7934,19 @@ MonoBehaviour:
   _radius: 2
   _onCollision:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1009452524}
+        m_TargetAssemblyTypeName: HighscoreSystem, Assembly-CSharp
+        m_MethodName: AddPoints
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: SmallBouncer
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!64 &872389109
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7529,7 +8098,19 @@ MonoBehaviour:
   _radius: 2
   _onCollision:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1009452524}
+        m_TargetAssemblyTypeName: HighscoreSystem, Assembly-CSharp
+        m_MethodName: AddPoints
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: SmallBouncer
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!64 &872704420
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7681,7 +8262,19 @@ MonoBehaviour:
   _radius: 2
   _onCollision:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1009452524}
+        m_TargetAssemblyTypeName: HighscoreSystem, Assembly-CSharp
+        m_MethodName: AddPoints
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: SmallBouncer
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!64 &888248018
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8006,6 +8599,170 @@ MonoBehaviour:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
+--- !u!1 &918493955
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 918493956}
+  - component: {fileID: 918493961}
+  - component: {fileID: 918493960}
+  - component: {fileID: 918493959}
+  - component: {fileID: 918493958}
+  - component: {fileID: 918493957}
+  m_Layer: 0
+  m_Name: Cube.020 (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &918493956
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918493955}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.44601732, y: 0.54869723, z: 0.54869664, w: -0.44601783}
+  m_LocalPosition: {x: 0.2596, y: 0.3044, z: -0.1304}
+  m_LocalScale: {x: 100, y: 99.99998, z: 99.99998}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1533150122}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 618.213}
+--- !u!114 &918493957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918493955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5457226cc1b64852951673e2cc97dc63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _strength: 50
+  _radius: 3
+  _onCollision:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1009452524}
+        m_TargetAssemblyTypeName: HighscoreSystem, Assembly-CSharp
+        m_MethodName: AddPoints
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: SmallBouncer
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!64 &918493958
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918493955}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 55
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2911736426955009642, guid: b93553f02b9eb0d4da6c223a7c48de42, type: 3}
+--- !u!54 &918493959
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918493955}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 55
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!23 &918493960
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918493955}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &918493961
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918493955}
+  m_Mesh: {fileID: 2911736426955009642, guid: b93553f02b9eb0d4da6c223a7c48de42, type: 3}
 --- !u!1 &961746421
 GameObject:
   m_ObjectHideFlags: 0
@@ -8112,44 +8869,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 961746421}
   m_Mesh: {fileID: -213027865097220932, guid: b93553f02b9eb0d4da6c223a7c48de42, type: 3}
---- !u!1 &976424251
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 976424252}
-  m_Layer: 5
-  m_Name: Powerup
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &976424252
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 976424251}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1703339271}
-  - {fileID: 1269918023}
-  - {fileID: 1443072439}
-  m_Father: {fileID: 2011230329}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &979816468
 GameObject:
   m_ObjectHideFlags: 0
@@ -8184,6 +8903,7 @@ Transform:
   - {fileID: 1047145111}
   - {fileID: 1074070107}
   - {fileID: 324530814}
+  - {fileID: 124930357}
   - {fileID: 706760069}
   - {fileID: 685427054}
   - {fileID: 395871039}
@@ -8517,7 +9237,19 @@ MonoBehaviour:
   _radius: 2
   _onCollision:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1009452524}
+        m_TargetAssemblyTypeName: HighscoreSystem, Assembly-CSharp
+        m_MethodName: AddPoints
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: SmallBouncer
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!64 &1002194720
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8730,7 +9462,19 @@ MonoBehaviour:
   _radius: 2
   _onCollision:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1009452524}
+        m_TargetAssemblyTypeName: HighscoreSystem, Assembly-CSharp
+        m_MethodName: AddPoints
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: SmallBouncer
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!64 &1010851532
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8860,7 +9604,7 @@ Transform:
   m_GameObject: {fileID: 1018396010}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071069, y: 9.313226e-10, z: -0, w: 0.70710677}
-  m_LocalPosition: {x: 0.13908881, y: 0.36384404, z: -0.6746875}
+  m_LocalPosition: {x: 0.13908881, y: 0.36384404, z: -0.7365998}
   m_LocalScale: {x: 100, y: 99.99998, z: 99.99998}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8882,7 +9626,19 @@ MonoBehaviour:
   _radius: 2
   _onCollision:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1009452524}
+        m_TargetAssemblyTypeName: HighscoreSystem, Assembly-CSharp
+        m_MethodName: AddPoints
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: SmallBouncer
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!64 &1018396013
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8982,80 +9738,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1018396010}
   m_Mesh: {fileID: -5741174448488666723, guid: b93553f02b9eb0d4da6c223a7c48de42, type: 3}
---- !u!1001 &1023657288
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 458245342}
-    m_Modifications:
-    - target: {fileID: 189203338680956061, guid: dc97cbde8528d3149a30c2ceec69e875,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.0463
-      objectReference: {fileID: 0}
-    - target: {fileID: 189203338680956061, guid: dc97cbde8528d3149a30c2ceec69e875,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.0266
-      objectReference: {fileID: 0}
-    - target: {fileID: 189203338680956061, guid: dc97cbde8528d3149a30c2ceec69e875,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.2493
-      objectReference: {fileID: 0}
-    - target: {fileID: 189203338680956061, guid: dc97cbde8528d3149a30c2ceec69e875,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 189203338680956061, guid: dc97cbde8528d3149a30c2ceec69e875,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 189203338680956061, guid: dc97cbde8528d3149a30c2ceec69e875,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 189203338680956061, guid: dc97cbde8528d3149a30c2ceec69e875,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 189203338680956061, guid: dc97cbde8528d3149a30c2ceec69e875,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 189203338680956061, guid: dc97cbde8528d3149a30c2ceec69e875,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 189203338680956061, guid: dc97cbde8528d3149a30c2ceec69e875,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8177075336134053165, guid: dc97cbde8528d3149a30c2ceec69e875,
-        type: 3}
-      propertyPath: m_Name
-      value: Flag (6)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: dc97cbde8528d3149a30c2ceec69e875, type: 3}
---- !u!4 &1023657289 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 189203338680956061, guid: dc97cbde8528d3149a30c2ceec69e875,
-    type: 3}
-  m_PrefabInstance: {fileID: 1023657288}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1036561551
 GameObject:
   m_ObjectHideFlags: 0
@@ -9151,7 +9833,7 @@ Transform:
   m_GameObject: {fileID: 1047145110}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071069, y: 9.313226e-10, z: -0, w: 0.70710677}
-  m_LocalPosition: {x: -0.1437, y: 0.2987, z: -0.0891}
+  m_LocalPosition: {x: -0.128, y: 0.2987, z: -0.0891}
   m_LocalScale: {x: 100, y: 99.99998, z: 99.99998}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9173,7 +9855,19 @@ MonoBehaviour:
   _radius: 2
   _onCollision:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1009452524}
+        m_TargetAssemblyTypeName: HighscoreSystem, Assembly-CSharp
+        m_MethodName: AddPoints
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Bouncer
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!64 &1047145113
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9549,7 +10243,19 @@ MonoBehaviour:
   _radius: 2
   _onCollision:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1009452524}
+        m_TargetAssemblyTypeName: HighscoreSystem, Assembly-CSharp
+        m_MethodName: AddPoints
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Bouncer
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!64 &1074070109
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9701,7 +10407,19 @@ MonoBehaviour:
   _radius: 2
   _onCollision:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1009452524}
+        m_TargetAssemblyTypeName: HighscoreSystem, Assembly-CSharp
+        m_MethodName: AddPoints
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: SmallBouncer
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!64 &1090159908
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9851,7 +10569,19 @@ MonoBehaviour:
   _respawnPosition: {fileID: 738355175}
   _onCollision:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1009452524}
+        m_TargetAssemblyTypeName: HighscoreSystem, Assembly-CSharp
+        m_MethodName: AddPoints
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Portal
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &1106391640
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10058,7 +10788,19 @@ MonoBehaviour:
   _radius: 2
   _onCollision:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1009452524}
+        m_TargetAssemblyTypeName: HighscoreSystem, Assembly-CSharp
+        m_MethodName: AddPoints
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: SmallBouncer
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!64 &1122916531
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10643,7 +11385,7 @@ Transform:
   m_GameObject: {fileID: 1208464404}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071069, y: 9.313226e-10, z: -0, w: 0.70710677}
-  m_LocalPosition: {x: 0.1505329, y: 0.3599933, z: -0.6421877}
+  m_LocalPosition: {x: 0.1505329, y: 0.3599933, z: -0.7041}
   m_LocalScale: {x: 100, y: 99.999985, z: 99.999985}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10737,7 +11479,19 @@ MonoBehaviour:
   _radius: 3
   _onCollision:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1009452524}
+        m_TargetAssemblyTypeName: HighscoreSystem, Assembly-CSharp
+        m_MethodName: AddPoints
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Bouncer
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!54 &1208464410
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10765,81 +11519,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!1 &1269918022
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1269918023}
-  - component: {fileID: 1269918025}
-  - component: {fileID: 1269918024}
-  m_Layer: 5
-  m_Name: Image (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1269918023
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1269918022}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 143.49998}
-  m_LocalScale: {x: 1.2527688, y: 1.2527688, z: 1.2527688}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 976424252}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -336.6, y: 656.50006}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1269918024
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1269918022}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8d3a69483b57d2845af6f70bedb97295, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1269918025
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1269918022}
-  m_CullTransparentMesh: 1
 --- !u!1 &1304073573
 GameObject:
   m_ObjectHideFlags: 0
@@ -11350,7 +12029,19 @@ MonoBehaviour:
   _radius: 3
   _onCollision:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1009452524}
+        m_TargetAssemblyTypeName: HighscoreSystem, Assembly-CSharp
+        m_MethodName: AddPoints
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Bouncer
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!54 &1359938291
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11430,7 +12121,19 @@ MonoBehaviour:
   _radius: 2
   _onCollision:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1009452524}
+        m_TargetAssemblyTypeName: HighscoreSystem, Assembly-CSharp
+        m_MethodName: AddPoints
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Bouncer
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!64 &1361444641
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11558,7 +12261,7 @@ Transform:
   m_GameObject: {fileID: 1365960399}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071069, y: 9.313226e-10, z: -0, w: 0.70710677}
-  m_LocalPosition: {x: 0.21292838, y: 0.28776294, z: 0.011128038}
+  m_LocalPosition: {x: 0.21292838, y: 0.28776294, z: 0.02}
   m_LocalScale: {x: 100, y: 99.99998, z: 99.99998}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11688,7 +12391,19 @@ MonoBehaviour:
   _radius: 2
   _onCollision:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1009452524}
+        m_TargetAssemblyTypeName: HighscoreSystem, Assembly-CSharp
+        m_MethodName: AddPoints
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: SmallBouncer
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!64 &1380468662
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12130,7 +12845,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 2
+  m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a41776a7840bad4f9874cea209376b7, type: 2}
   m_sharedMaterial: {fileID: -2648209536537950150, guid: 3a41776a7840bad4f9874cea209376b7,
@@ -12290,81 +13005,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.0006082681, y: 0.000026943382, z: 0.0005895495}
   m_Center: {x: -0.0021203398, y: -0.0040671825, z: -0.0012903864}
---- !u!1 &1443072438
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1443072439}
-  - component: {fileID: 1443072441}
-  - component: {fileID: 1443072440}
-  m_Layer: 5
-  m_Name: Image (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1443072439
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1443072438}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 143.49998}
-  m_LocalScale: {x: 1.2527688, y: 1.2527688, z: 1.2527688}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 976424252}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -336.6, y: 656.50006}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1443072440
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1443072438}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 395d9aef68e940a4e96e6c501616fbb0, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1443072441
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1443072438}
-  m_CullTransparentMesh: 1
 --- !u!1 &1471136004
 GameObject:
   m_ObjectHideFlags: 0
@@ -12848,6 +13488,8 @@ Transform:
   - {fileID: 858234034}
   - {fileID: 1803204488}
   - {fileID: 872389107}
+  - {fileID: 1614375774}
+  - {fileID: 918493956}
   - {fileID: 2128806855}
   - {fileID: 122807893}
   - {fileID: 1010851530}
@@ -12999,7 +13641,19 @@ MonoBehaviour:
   _radius: 2
   _onCollision:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1009452524}
+        m_TargetAssemblyTypeName: HighscoreSystem, Assembly-CSharp
+        m_MethodName: AddPoints
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: SmallBouncer
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!64 &1538719298
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13387,7 +14041,19 @@ MonoBehaviour:
   _radius: 2
   _onCollision:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1009452524}
+        m_TargetAssemblyTypeName: HighscoreSystem, Assembly-CSharp
+        m_MethodName: AddPoints
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Bouncer
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!64 &1554824268
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13735,6 +14401,170 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1572548763}
   m_Mesh: {fileID: -5495902117074765545, guid: b93553f02b9eb0d4da6c223a7c48de42, type: 3}
+--- !u!1 &1614375773
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1614375774}
+  - component: {fileID: 1614375779}
+  - component: {fileID: 1614375778}
+  - component: {fileID: 1614375777}
+  - component: {fileID: 1614375776}
+  - component: {fileID: 1614375775}
+  m_Layer: 0
+  m_Name: Cube.020 (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1614375774
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1614375773}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.11460528, y: 0.6977577, z: 0.6977574, w: 0.11460538}
+  m_LocalPosition: {x: 0.2391, y: 0.2988, z: -0.05316}
+  m_LocalScale: {x: 100, y: 99.99998, z: 99.99998}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1533150122}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 521.345}
+--- !u!114 &1614375775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1614375773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5457226cc1b64852951673e2cc97dc63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _strength: 50
+  _radius: 3
+  _onCollision:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1009452524}
+        m_TargetAssemblyTypeName: HighscoreSystem, Assembly-CSharp
+        m_MethodName: AddPoints
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: SmallBouncer
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!64 &1614375776
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1614375773}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 55
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2911736426955009642, guid: b93553f02b9eb0d4da6c223a7c48de42, type: 3}
+--- !u!54 &1614375777
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1614375773}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 55
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!23 &1614375778
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1614375773}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1614375779
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1614375773}
+  m_Mesh: {fileID: 2911736426955009642, guid: b93553f02b9eb0d4da6c223a7c48de42, type: 3}
 --- !u!1 &1649655442
 GameObject:
   m_ObjectHideFlags: 0
@@ -13787,7 +14617,19 @@ MonoBehaviour:
   _radius: 2
   _onCollision:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1009452524}
+        m_TargetAssemblyTypeName: HighscoreSystem, Assembly-CSharp
+        m_MethodName: AddPoints
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: SmallBouncer
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!64 &1649655445
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14035,81 +14877,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a37b14f4979f08499e15c5a9b6beaa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1703339270
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1703339271}
-  - component: {fileID: 1703339273}
-  - component: {fileID: 1703339272}
-  m_Layer: 5
-  m_Name: Image
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1703339271
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1703339270}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 143.5}
-  m_LocalScale: {x: 1.2527688, y: 1.2527688, z: 1.2527688}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 976424252}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -336.6, y: 656.5}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1703339272
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1703339270}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e2f316ba6c894274bb836f4d0ce3e900, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1703339273
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1703339270}
-  m_CullTransparentMesh: 1
 --- !u!1 &1710115429
 GameObject:
   m_ObjectHideFlags: 0
@@ -14140,7 +14907,7 @@ Transform:
   m_GameObject: {fileID: 1710115429}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071069, y: 9.313226e-10, z: -0, w: 0.70710677}
-  m_LocalPosition: {x: 0.1882, y: 0.3571798, z: -0.61573297}
+  m_LocalPosition: {x: 0.1882, y: 0.3571798, z: -0.67764527}
   m_LocalScale: {x: 100, y: 99.99998, z: 99.99998}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14162,7 +14929,19 @@ MonoBehaviour:
   _radius: 2
   _onCollision:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1009452524}
+        m_TargetAssemblyTypeName: HighscoreSystem, Assembly-CSharp
+        m_MethodName: AddPoints
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: SmallBouncer
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!64 &1710115432
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14262,6 +15041,112 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1710115429}
   m_Mesh: {fileID: 7807538432633192378, guid: b93553f02b9eb0d4da6c223a7c48de42, type: 3}
+--- !u!1 &1758056373
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1758056374}
+  - component: {fileID: 1758056377}
+  - component: {fileID: 1758056376}
+  - component: {fileID: 1758056375}
+  m_Layer: 0
+  m_Name: small obstacle.002 (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1758056374
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1758056373}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.35463467, y: -0.5910323, z: -0.6805568, w: 0.24851075}
+  m_LocalPosition: {x: 0.2382, y: 0.2979, z: -0.0509}
+  m_LocalScale: {x: 46.083, y: 28.539545, z: 86.46378}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1922191313}
+  m_LocalEulerAnglesHint: {x: -78.732, y: 435.226, z: 155.527}
+--- !u!64 &1758056375
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1758056373}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 55
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5010929898760261705, guid: b93553f02b9eb0d4da6c223a7c48de42, type: 3}
+--- !u!23 &1758056376
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1758056373}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 1dafd94c0bded904c81359bd2abc9ec0, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1758056377
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1758056373}
+  m_Mesh: {fileID: -5010929898760261705, guid: b93553f02b9eb0d4da6c223a7c48de42, type: 3}
 --- !u!1 &1761126677
 GameObject:
   m_ObjectHideFlags: 0
@@ -14442,6 +15327,16 @@ PrefabInstance:
       propertyPath: m_Target
       value: 
       objectReference: {fileID: 1968756111}
+    - target: {fileID: 6533232743933305581, guid: 1b4473883c9c37e46bf7c8d16be5f2bb,
+        type: 3}
+      propertyPath: m_Drag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6533232743933305581, guid: 1b4473883c9c37e46bf7c8d16be5f2bb,
+        type: 3}
+      propertyPath: m_Mass
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8201691179484130491, guid: 1b4473883c9c37e46bf7c8d16be5f2bb,
         type: 3}
       propertyPath: m_IsActive
@@ -15061,7 +15956,7 @@ Transform:
   m_GameObject: {fileID: 1803204487}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071069, y: 9.313226e-10, z: -0, w: 0.70710677}
-  m_LocalPosition: {x: 0.18365116, y: 0.28981525, z: -0.08963997}
+  m_LocalPosition: {x: 0.1956, y: 0.28981525, z: -0.0919}
   m_LocalScale: {x: 100, y: 99.99998, z: 99.99998}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15083,7 +15978,19 @@ MonoBehaviour:
   _radius: 2
   _onCollision:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1009452524}
+        m_TargetAssemblyTypeName: HighscoreSystem, Assembly-CSharp
+        m_MethodName: AddPoints
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: SmallBouncer
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!64 &1803204490
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15448,6 +16355,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 798724607}
+        m_TargetAssemblyTypeName: Obstacles.ClosingPlate, Assembly-CSharp
+        m_MethodName: TogglePlate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &1847435614
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15467,8 +16386,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.04763422, y: 0.031149892, z: 0.01}
-  m_Center: {x: -0.0011828878, y: 0.0055749444, z: -6.8824654e-11}
+  m_Size: {x: 0.06179796, y: 0.031149892, z: 0.103795364}
+  m_Center: {x: 0.005898667, y: 0.0055749444, z: 0.046897713}
 --- !u!1001 &1866210238
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15854,6 +16773,7 @@ Transform:
   - {fileID: 1761126678}
   - {fileID: 153545666}
   - {fileID: 687583127}
+  - {fileID: 1758056374}
   - {fileID: 1493260060}
   - {fileID: 492805133}
   - {fileID: 961746422}
@@ -16442,8 +17362,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   _damping: 1
-  _strengh: 125
-  _returnTime: 0.5
+  _strengh: 75
+  _returnTime: 0.3
   _reversedConstraints: 1
 --- !u!59 &1979226979
 HingeJoint:
@@ -16473,7 +17393,7 @@ HingeJoint:
   m_ExtendedLimits: 0
   m_UseAcceleration: 0
   m_Limits:
-    min: -51.344173
+    min: -89.50633
     max: 0.75146484
     bounciness: 0
     bounceMinVelocity: 0.2
@@ -16618,7 +17538,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -44, y: 663}
+  m_AnchoredPosition: {x: -58, y: 663}
   m_SizeDelta: {x: 425, y: 125}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1982766526
@@ -16904,7 +17824,19 @@ MonoBehaviour:
   _radius: 3
   _onCollision:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1009452524}
+        m_TargetAssemblyTypeName: HighscoreSystem, Assembly-CSharp
+        m_MethodName: AddPoints
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Bouncer
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!54 &1996003665
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17010,7 +17942,6 @@ RectTransform:
   m_Children:
   - {fileID: 1982766525}
   - {fileID: 1132020826}
-  - {fileID: 976424252}
   m_Father: {fileID: 854538490}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -17388,7 +18319,19 @@ MonoBehaviour:
   _radius: 2
   _onCollision:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1009452524}
+        m_TargetAssemblyTypeName: HighscoreSystem, Assembly-CSharp
+        m_MethodName: AddPoints
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: SmallBouncer
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!64 &2128806857
 MeshCollider:
   m_ObjectHideFlags: 0
