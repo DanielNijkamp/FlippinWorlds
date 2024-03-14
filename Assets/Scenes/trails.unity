@@ -241,6 +241,74 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 1
+--- !u!1001 &961608898
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3900850019941714375, guid: 1b4473883c9c37e46bf7c8d16be5f2bb,
+        type: 3}
+      propertyPath: m_Name
+      value: Ball
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439328290660167518, guid: 1b4473883c9c37e46bf7c8d16be5f2bb,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439328290660167518, guid: 1b4473883c9c37e46bf7c8d16be5f2bb,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439328290660167518, guid: 1b4473883c9c37e46bf7c8d16be5f2bb,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439328290660167518, guid: 1b4473883c9c37e46bf7c8d16be5f2bb,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439328290660167518, guid: 1b4473883c9c37e46bf7c8d16be5f2bb,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439328290660167518, guid: 1b4473883c9c37e46bf7c8d16be5f2bb,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439328290660167518, guid: 1b4473883c9c37e46bf7c8d16be5f2bb,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439328290660167518, guid: 1b4473883c9c37e46bf7c8d16be5f2bb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439328290660167518, guid: 1b4473883c9c37e46bf7c8d16be5f2bb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439328290660167518, guid: 1b4473883c9c37e46bf7c8d16be5f2bb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1b4473883c9c37e46bf7c8d16be5f2bb, type: 3}
 --- !u!1001 &1319203046
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -253,6 +321,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Balletje
+      objectReference: {fileID: 0}
+    - target: {fileID: 761613884292377183, guid: 0ce652e38882ee746b114abc2043e462,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6746915730875312813, guid: 0ce652e38882ee746b114abc2043e462,
         type: 3}
@@ -267,7 +340,7 @@ PrefabInstance:
     - target: {fileID: 6746915730875312813, guid: 0ce652e38882ee746b114abc2043e462,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.8917
+      value: 2.038
       objectReference: {fileID: 0}
     - target: {fileID: 6746915730875312813, guid: 0ce652e38882ee746b114abc2043e462,
         type: 3}
@@ -438,3 +511,4 @@ SceneRoots:
   m_Roots:
   - {fileID: 410087041}
   - {fileID: 1319203046}
+  - {fileID: 961608898}
