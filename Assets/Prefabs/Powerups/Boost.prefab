@@ -96,7 +96,6 @@ GameObject:
   - component: {fileID: 2644261026877759887}
   - component: {fileID: 7906437777586620234}
   - component: {fileID: 8442045037098456328}
-  - component: {fileID: 7345587140176971765}
   m_Layer: 0
   m_Name: Boost
   m_TagString: Untagged
@@ -159,21 +158,6 @@ MonoBehaviour:
       m_Calls: []
   _boostStrength: 5
   _directionThreshold: 0.5
---- !u!114 &7345587140176971765
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7736273447532983724}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b14a6770ce716f469ebb70a8f7822b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _first: {fileID: 1575415099404378011}
-  _second: {fileID: 7039805771044587298}
-  <CurrentSkin>k__BackingField: {fileID: 1575415099404378011}
 --- !u!1001 &1809768095225864906
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -267,12 +251,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16b8ea8c258c2fd4aabea7304b080f57, type: 3}
---- !u!1 &1575415099404378011 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 16b8ea8c258c2fd4aabea7304b080f57,
-    type: 3}
-  m_PrefabInstance: {fileID: 1809768095225864906}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2204282232677893409 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16b8ea8c258c2fd4aabea7304b080f57,

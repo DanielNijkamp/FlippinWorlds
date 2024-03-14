@@ -19,6 +19,7 @@ namespace Obstacles
 
         [SerializeField] private GameObject _player;
         [SerializeField] private GameObject _ball;
+        [SerializeField] private string _copyTag;
         
         private Rigidbody _rigidbody;
 
@@ -43,7 +44,10 @@ namespace Obstacles
         }
         private void OnTriggerEnter(Collider other)
         {
-            StartCoroutine(ActivateRails());
+            if (other.CompareTag(_copyTag))
+            {
+                StartCoroutine(ActivateRails());
+            }
         }
 
         private void PlayAnimation()
