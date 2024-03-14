@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 024b3f28b42f412498e16b3131541389, type: 3}
   m_Name: Obstacle value 1
   m_EditorClassIdentifier: 
-  <Coins>k__BackingField: 0
-  <Bouncer>k__BackingField: 0
-  <SmallBouncer>k__BackingField: 0
-  <TurningDoor>k__BackingField: 0
-  <Portal>k__BackingField: 0
-  <Boosters>k__BackingField: 0
+  <Coins>k__BackingField: 25
+  <Bouncer>k__BackingField: 100
+  <SmallBouncer>k__BackingField: 50
+  <TurningDoor>k__BackingField: 10
+  <Portal>k__BackingField: 200
+  <Boosters>k__BackingField: 25

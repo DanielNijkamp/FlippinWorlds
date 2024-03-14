@@ -4947,7 +4947,31 @@ MonoBehaviour:
   <_score>k__BackingField: 3
   _onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1698896182}
+        m_TargetAssemblyTypeName: LifeUI, Assembly-CSharp
+        m_MethodName: UpdateUI
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 569476318}
+        m_TargetAssemblyTypeName: LifeSystem, Assembly-CSharp
+        m_MethodName: CheckLifes
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _onGameOver:
     m_PersistentCalls:
       m_Calls: []
@@ -8640,7 +8664,19 @@ MonoBehaviour:
   <_score>k__BackingField: 0
   _onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1432389373}
+        m_TargetAssemblyTypeName: ScoreUI, Assembly-CSharp
+        m_MethodName: UpdateUI
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _obstacleValues: {fileID: 11400000, guid: 90a0724b29548c54291880e71fbdee57, type: 2}
 --- !u!1 &1010851529
 GameObject:
@@ -12047,6 +12083,7 @@ GameObject:
   - component: {fileID: 1432389370}
   - component: {fileID: 1432389372}
   - component: {fileID: 1432389371}
+  - component: {fileID: 1432389373}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -12093,7 +12130,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 3000000000
+  m_text: 2
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a41776a7840bad4f9874cea209376b7, type: 2}
   m_sharedMaterial: {fileID: -2648209536537950150, guid: 3a41776a7840bad4f9874cea209376b7,
@@ -12171,6 +12208,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1432389369}
   m_CullTransparentMesh: 1
+--- !u!114 &1432389373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432389369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a316f8f09b6b74d42a472ac8a077908e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1432477204 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2564947780800995360, guid: 6a27c6aee92581d42aff91a744aaa9c2,
@@ -13849,6 +13898,7 @@ GameObject:
   - component: {fileID: 1698896179}
   - component: {fileID: 1698896181}
   - component: {fileID: 1698896180}
+  - component: {fileID: 1698896182}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -13973,6 +14023,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1698896178}
   m_CullTransparentMesh: 1
+--- !u!114 &1698896182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1698896178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a37b14f4979f08499e15c5a9b6beaa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1703339270
 GameObject:
   m_ObjectHideFlags: 0
