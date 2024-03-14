@@ -29,6 +29,7 @@ namespace Obstacles
         
         private IEnumerator ActivateRails()
         {
+            _splineAnimate.Restart(false);
             ToggleVisuals();
             yield return new WaitForSeconds(0.05f);
             _cameraPositioner.TogglePosition();

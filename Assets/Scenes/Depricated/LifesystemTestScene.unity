@@ -949,7 +949,6 @@ GameObject:
   m_Component:
   - component: {fileID: 545462159}
   - component: {fileID: 545462160}
-  - component: {fileID: 545462157}
   m_Layer: 0
   m_Name: lifesystem
   m_TagString: Untagged
@@ -957,21 +956,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &545462157
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 545462156}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd44c4f6045cd3c47a0fd7bdddb042dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _spawnPoint: {fileID: 1163330592}
-  _playerPrefab: {fileID: 5036504832015672162, guid: cadcb5cbd59e3a346a89aed207761770,
-    type: 3}
 --- !u!4 &545462159
 Transform:
   m_ObjectHideFlags: 0
@@ -1000,7 +984,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <_score>k__BackingField: 9000
-  <_onValueChanged>k__BackingField:
+  _onValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  _onGameOver:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1 &560475453 stripped
