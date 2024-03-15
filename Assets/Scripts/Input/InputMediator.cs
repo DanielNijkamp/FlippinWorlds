@@ -11,12 +11,7 @@ public class InputMediator : MonoBehaviour
     [SerializeField] private Flipper[] _spaceFlippers;
 
     [SerializeField] private Flipper[] _currentFlippers;
-
-    private void Start()
-    {
-        _currentFlippers = _baseFlippers;
-    }
-
+    
     public void SwapSkins()
     {
         _currentFlippers = _currentFlippers == _baseFlippers 

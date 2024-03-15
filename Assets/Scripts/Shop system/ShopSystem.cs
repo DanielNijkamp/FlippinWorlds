@@ -12,6 +12,8 @@ public class ShopSystem : MonoBehaviour
     [SerializeField] private List<Sprite> _itemList = new List<Sprite>();
     [SerializeField] private List<int> _itemPriceList = new List<int>();
     [SerializeField] private UnityEvent _onChangeUI = new UnityEvent();
+    
+    [SerializeField] private UnityEvent _onBuy = new UnityEvent();
     private int _currentItem = 0;
 
     public int CurrentItem => _currentItem;
@@ -25,23 +27,19 @@ public class ShopSystem : MonoBehaviour
     }
     public void BuyItem()
     {
-    if (_itemPriceList[_currentItem] > _currencySystem.Score)
-            return;
-    _currencySystem.SubtractPoints(_itemPriceList[_currentItem]);
-     //unlock item
-
-     _onChangeUI?.Invoke();
+        if (_itemPriceList[_currentItem] >= _currencySystem.Score) return;
         
+        _currencySystem.SubtractPoints(_itemPriceList[_currentItem]);
 
+        _onChangeUI?.Invoke();
+        _onBuy?.Invoke();
     }
     
-
     public void NextItem()
     {
         _currentItem++;
         if (_currentItem >= ItemList.Count) _currentItem = 0;   
         _onChangeUI?.Invoke();
-        print(_currentItem);
     }
 
     public void PreviousItem()

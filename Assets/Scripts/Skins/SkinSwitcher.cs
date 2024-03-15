@@ -17,6 +17,8 @@ public class SkinSwitcher : MonoBehaviour
     
     public void SwitchSkin()
     {
+        CurrentSkin.SetActive(false);
         CurrentSkin = CurrentSkin == _first ? _second : _first;
+        CurrentSkin.SetActive(true);
     }
 }

@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace Input
@@ -7,7 +8,7 @@ namespace Input
         [SerializeField] private GameObject _leftArea;
         [SerializeField] private GameObject _rightArea;
         [SerializeField] private GameObject _slider;
-
+        
         public void ToggleInput()
         {
             var leftEnabled = _leftArea.activeSelf;

@@ -6,6 +6,8 @@ public class CurrencySystem : ScoreSystem
     public void ConvertToCurrency(int value)
     {
         int convertedCurrency = (int)(value * convertionMultiplier);
+        _score = convertedCurrency;
+        _onValueChanged?.Invoke(convertedCurrency);
     }
     public override void AddPoints(string value)
     {
